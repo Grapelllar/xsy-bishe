@@ -1,0 +1,60 @@
+.card {
+  height: 400px;
+  width: 300px;
+  border: 1px solid;
+  border-color: var(--primary);
+  border-radius: 10px;
+
+  .card-top {
+    display: flex;
+    padding: 20px 24px 24px;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card-money {
+      font-weight: 800;
+      font-size: 2.25rem;
+
+      span {
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin-left: 8px;
+      }
+    }
+
+    .card-pay-type {
+      line-height: 1.5rem;
+      font-weight: 500;
+    }
+
+    .card-subscribe {
+      margin-top: 24px;
+
+      button {
+        width: 100%;
+        opacity: 0.8;
+        font-weight: 500;
+        font-size: .875rem;
+        text-align: center;
+        padding: 4px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .card-offer {
+      margin-top: 8px;
+      padding: 4px;
+      background-color: transparent;
+      cursor: pointer;
+
+    }
+  }
+}

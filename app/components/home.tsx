@@ -51,6 +51,10 @@ const NewChat = dynamic(async () => (await import("./new-chat")).NewChat, {
   loading: () => <Loading />,
 });
 
+const Pay = dynamic(async () => (await import("./pay")).Pay, {
+  loading: () => <Loading />,
+});
+
 const MaskPage = dynamic(async () => (await import("./mask")).MaskPage, {
   loading: () => <Loading />,
 });
@@ -153,6 +157,7 @@ function Screen() {
             <Routes>
               <Route path={Path.Home} element={<Chat />} />
               <Route path={Path.NewChat} element={<NewChat />} />
+              <Route path={Path.Pay} element={<Pay />} />
               <Route path={Path.Masks} element={<MaskPage />} />
               <Route path={Path.Chat} element={<Chat />} />
               <Route path={Path.Settings} element={<Settings />} />

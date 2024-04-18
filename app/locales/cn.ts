@@ -376,6 +376,10 @@ const cn = {
     SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
     More: "查看全部",
   },
+  Pay:{
+    Title: "付费",
+    SubTitle: "选择您的订阅",
+  },
 
   URLCommand: {
     Code: "检测到链接中已经包含访问码，是否自动填入？",
