@@ -153,6 +153,10 @@ const cn = {
     Reset: "[unused]",
     ResetConfirm: "确认清空历史摘要？",
   },
+  Poll: {
+    Title: "多key轮转",
+    Send: "提升会话速度",
+  },
   Home: {
     NewChat: "新的聊天",
     DeleteChat: "确认删除选中的对话？",
@@ -257,10 +261,6 @@ const cn = {
     },
 
     Usage: {
-      Title: "余额查询",
-      SubTitle(used: any, total: any) {
-        return `本月已使用 $${used}，订阅总额 $${total}`;
-      },
       IsChecking: "正在检查…",
       Check: "重新检查",
       NoAccess: "输入 API Key 或访问密码查看余额",
@@ -277,6 +277,10 @@ const cn = {
     CustomModel: {
       Title: "自定义模型名",
       SubTitle: "增加自定义模型可选项，使用英文逗号隔开",
+    },
+    ManyKeyPoll: {
+      Title: "多key轮转",
+      SubTitle: "开启多key轮转，提升访问速度",
     },
     Model: "模型 (model)",
     Temperature: {

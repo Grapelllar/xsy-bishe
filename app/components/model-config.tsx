@@ -208,6 +208,17 @@ export function ModelConfigList(props: {
           }
         ></input>
       </ListItem>
+        <ListItem title={Locale.Poll.Title} subTitle={Locale.Poll.Send}>
+            <input
+                type="checkbox"
+                checked={props.modelConfig.poll}
+                onChange={(e) =>
+                    props.updateConfig(
+                        (config) => (config.poll = e.currentTarget.checked),
+                    )
+                }
+            ></input>
+        </ListItem>
     </>
   );
 }
