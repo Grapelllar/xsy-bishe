@@ -492,28 +492,6 @@ export function ChatActions(props: {
             )}
 
             <ChatAction
-                onClick={nextTheme}
-                text={Locale.Chat.InputActions.Theme[theme]}
-                icon={
-                    <>
-                        {theme === Theme.Auto ? (
-                            <AutoIcon/>
-                        ) : theme === Theme.Light ? (
-                            <LightIcon/>
-                        ) : theme === Theme.Dark ? (
-                            <DarkIcon/>
-                        ) : null}
-                    </>
-                }
-            />
-
-            <ChatAction
-                onClick={props.showPromptHints}
-                text={Locale.Chat.InputActions.Prompt}
-                icon={<PromptIcon/>}
-            />
-
-            <ChatAction
                 onClick={() => {
                     navigate(Path.Masks);
                 }}
@@ -540,21 +518,6 @@ export function ChatActions(props: {
                 onClick={() => setShowModelSelector(true)}
                 text={currentModel}
                 icon={<RobotIcon/>}
-            />
-
-            <ChatAction
-                onClick={selectImage}
-                text="选择图片"
-                icon={<UploadIcon/>}
-                innerNode={
-                    <input
-                        type="file"
-                        accept=".png,.jpg,.webp,.jpeg"
-                        id="chat-image-file-select-upload"
-                        style={{display: "none"}}
-                        onChange={onImageSelected}
-                    />
-                }
             />
 
             {showModelSelector && (
