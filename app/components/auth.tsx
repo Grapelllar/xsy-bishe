@@ -14,7 +14,7 @@ export function AuthPage() {
   const navigate = useNavigate();
   const access = useAccessStore();
 
-  const goHome = () => navigate(Path.Home);
+  const goHome = () => navigate(Path.NewChat);
 
   useEffect(() => {
     if (getClientConfig()?.isApp) {

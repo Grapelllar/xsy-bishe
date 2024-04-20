@@ -127,7 +127,7 @@ function Screen() {
   const config = useAppConfig();
   const location = useLocation();
   const isHome = location.pathname === Path.Home;
-  const isAuth = location.pathname === Path.Auth;
+  const isAuth = location.pathname === Path.Home;
   const isMobileScreen = useMobileScreen();
 
   useEffect(() => {
@@ -152,7 +152,6 @@ function Screen() {
       ) : (
         <>
           <SideBar className={isHome ? styles["sidebar-show"] : ""} />
-
           <div className={styles["window-content"]} id={SlotID.AppBody}>
             <Routes>
               <Route path={Path.Home} element={<Chat />} />

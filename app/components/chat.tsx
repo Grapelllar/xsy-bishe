@@ -86,7 +86,6 @@ import {ContextPrompts, MaskAvatar, MaskConfig} from "./mask";
 import {useMaskStore} from "../store/mask";
 import {ChatCommandPrefix, useChatCommand, useCommand} from "../command";
 import {prettyObject} from "../utils/format";
-import {ExportMessageModal} from "./exporter";
 import {getClientConfig} from "../config/client";
 
 const Markdown = dynamic(async () => (await import("./markdown")).Markdown, {
@@ -1117,25 +1116,6 @@ function _Chat() {
                     </div>
                 </div>
                 <div className="window-actions">
-                    {!isMobileScreen && (
-                        <div className="window-action-button">
-                            <IconButton
-                                icon={<RenameIcon/>}
-                                bordered
-                                onClick={() => setIsEditingMessage(true)}
-                            />
-                        </div>
-                    )}
-                    <div className="window-action-button">
-                        <IconButton
-                            icon={<ExportIcon/>}
-                            bordered
-                            title={Locale.Chat.Actions.Export}
-                            onClick={() => {
-                                setShowExport(true);
-                            }}
-                        />
-                    </div>
                     {showMaxIcon && (
                         <div className="window-action-button">
                             <IconButton
@@ -1418,18 +1398,6 @@ function _Chat() {
                     />
                 </div>
             </div>
-
-            {showExport && (
-                <ExportMessageModal onClose={() => setShowExport(false)}/>
-            )}
-
-            {isEditingMessage && (
-                <EditMessageModal
-                    onClose={() => {
-                        setIsEditingMessage(false);
-                    }}
-                />
-            )}
         </div>
     );
 }
