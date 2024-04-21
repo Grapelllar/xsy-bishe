@@ -162,28 +162,28 @@ export function Pay() {
             money="￥70"
             per="/月"
             payType="按月支付"
-            cardOff="年付节约30元"
+            cardOff="年付节约20%"
         />
         <Card
-            title="基础套餐"
-            money="￥70"
+            title="标准套餐"
+            money="￥210"
             per="/月"
             payType="按月支付"
-            cardOff="年付节约30元"
+            cardOff="年付节约20%"
         />
         <Card
-            title="基础套餐"
-            money="￥70"
+            title="Pro 套餐"
+            money="￥420"
             per="/月"
             payType="按月支付"
-            cardOff="年付节约30元"
+            cardOff="年付节约20%"
         />
         <Card
-            title="基础套餐"
-            money="￥70"
+            title="Max 套餐"
+            money="￥840"
             per="/月"
             payType="按月支付"
-            cardOff="年付节约30元"
+            cardOff="年付节约20%"
         />
       </div>
     </div>

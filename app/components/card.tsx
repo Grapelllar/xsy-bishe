@@ -31,10 +31,10 @@ export function Card(props: {
             </div>
             <div>
                 <ul>
-                    <li>Limited generations (~200 / month)</li>
-                    <li>Limited generations (~200 / month)</li>
-                    <li>Limited generations (~200 / month)</li>
-                    <li>Limited generations (~200 / month)</li>
+                    <li>不限生成图片数量</li>
+                    <li>快速生成，领先一步</li>
+                    <li>智能的提示词</li>
+                    <li>场景预设</li>
                 </ul>
             </div>
         </div>
