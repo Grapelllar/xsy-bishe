@@ -1,11 +1,6 @@
 {
-  "name": "chatgpt-midjourney",
-  "version": "3.2.3",
-  "private": false,
-  "license": "MIT",
-  "repository": {
-    "url": "https://github.com/Licoy/ChatGPT-Midjourney"
-  },
+  "name": "xsy-bishe",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "cross-env BUILD_MODE=standalone next build",

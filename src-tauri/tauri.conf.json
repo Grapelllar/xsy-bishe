@@ -8,8 +8,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "ChatGPT-Midjourney",
-    "version": "3.2.3"
+    "productName": "xsy-bishe",
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
