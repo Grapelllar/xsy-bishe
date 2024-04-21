@@ -156,6 +156,10 @@ const en: LocaleType = {
     ResetConfirm:
       "Resetting will clear the current conversation history and historical memory. Are you sure you want to reset?",
   },
+  Poll: {
+    Title: "Multi-key rotation",
+    Send: "Increase conversation speed",
+  },
   Home: {
     NewChat: "New Chat",
     DeleteChat: "Confirm to delete the selected conversation?",
@@ -259,10 +263,6 @@ const en: LocaleType = {
       Placeholder: "OpenAI API Key",
     },
     Usage: {
-      Title: "Account Balance",
-      SubTitle(used: any, total: any) {
-        return `Used this month $${used}, subscription $${total}`;
-      },
       IsChecking: "Checking...",
       Check: "Check",
       NoAccess: "Enter API Key to check balance",
@@ -279,6 +279,10 @@ const en: LocaleType = {
     CustomModel: {
       Title: "Custom Models",
       SubTitle: "Add extra model options, separate by comma",
+    },
+    ManyKeyPoll: {
+      Title: "Multi-key rotation",
+      SubTitle: "Enable multi-key rotation to improve access speed",
     },
     Model: "Model",
     Temperature: {
@@ -376,7 +380,6 @@ const en: LocaleType = {
     Return: "Return",
     Skip: "Just Start",
     Title: "Pick a Mask",
-    SubTitle: "Chat with the Soul behind the Mask",
     More: "Find More",
     NotShow: "Never Show Again",
     ConfirmNoShow: "Confirm to disable？You can enable it in settings later.",
@@ -395,7 +398,10 @@ const en: LocaleType = {
     Topic: "Topic",
     Time: "Time",
   },
-
+  Pay:{
+    Title: "Pay",
+    SubTitle: "Select your subscription",
+  },
   URLCommand: {
     Code: "Detected access code from url, confirm to apply? ",
     Settings: "Detected settings from url, confirm to apply?",
